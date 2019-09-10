@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sobenhat(a, b, c) {
+        let min = (b < c) ? b : c;
+        if (min < a) {
+            return min;
+        } else min = a;
+        return min;
+    }
+
+    let n1 = parseInt(prompt("Số a: "));
+    let n2 = parseInt(prompt("Số b: "));
+    let n3 = parseInt(prompt("Số c: "));
+    alert(sobenhat(n1, n2, n3));
+</script>
+</body>
+</html>

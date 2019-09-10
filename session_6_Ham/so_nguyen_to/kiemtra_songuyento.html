@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function isPrime(n) {
+        let check=true;
+        if (n < 2) {
+            check= false;
+        }
+            for (var i = 2; i < n; i++) {
+                if (n % i == 0) {
+                    check=  false;
+                  }
+            }
+            return check;
+    //if (check == true) {
+    //   document.writeln("là so nguyen to")
+   // } else {
+   //     document.writeln("không là sô nguyen to")
+  // }
+    }
+   // isPrime(23);
+   function numberPrime(n) {
+        for(let i=2; i<n;i++) {
+            if (isPrime(i) ) {
+                document.writeln(i);
+            }
+        }
+    }
+    numberPrime(10000);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function giaithua(n) {
+    //     let a;
+    //     for (a = 1; n >= 1; n--) {
+    //         a = a * n;
+    //     }
+    //     return a;
+    // }
+    // let inter = parseInt(prompt("nhập"));
+    // alert(giaithua(inter))
+    function giaithua(n) {
+        if (n === 0) { return 1; }
+        return n * giaithua(n-1);
+    }
+    let inter = parseInt(prompt("nhập"));
+    alert(giaithua(inter))
+
+</script>
+</body>
+</html>

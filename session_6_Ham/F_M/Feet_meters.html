@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <label></label>
+        <input type="number" id="nhap" placeholder="Nhập food" oninput="chuyendoi(this.value)"
+               onchange="chuyendoi(this.value">
+
+    </p>
+    <p>Meters: <span id="outMest"></span></p>
+
+</form>
+<form>
+    <p>
+        <input type="number" id="ok" placeholder="Nhập Mét tơ" oninput="met(this.value" onchange="met(this.value)">
+    </p>
+    <p>Food: <span id="food"></span></p>
+</form>
+<script>
+    function chuyendoi(meters) {
+        meters = parseFloat(meters);
+        document.getElementById("outMest").innerHTML = (meters * 0.305).toFixed(3)
+    }
+
+    function met(food) {
+        food = parseFloat(food)
+        document.getElementById("food").innerHTML = (food * 3.27869230761).toFixed(3)
+    }
+</script>
+</body>
+</html>
