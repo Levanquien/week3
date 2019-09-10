@@ -2,19 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lala</title>
+    <title>Bai 8</title>
 </head>
 <body>
+
+</body>
 <script>
-    function nguyenduong(n) {
-        if (n > 0 & n % 1 === 0) {
-            return true
+    var maxArray = prompt("Import length of array: ");
+    function reverse() {
+        if (maxArray == parseInt(maxArray) && maxArray > 0) {
+            let array = [];
+            for (let i = 0; i < maxArray; i++) {
+                array.push(prompt("Nhập: "));
+            }
+            document.write(array);
+            document.write("<br>");
+            let reserveArray = array.reverse().join(",");
+            document.write(reserveArray);
         }else {
-            return false
+            alert("Please input a number.");
         }
     }
-    var input = prompt("a")
-    alert(nguyenduong(input))
+    reverse();
 </script>
-</body>
 </html>

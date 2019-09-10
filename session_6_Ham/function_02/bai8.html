@@ -8,15 +8,15 @@
 <script>
     function key() {
         var mangsonguyen = [];
-        mangsonguyen[0] = 3;
-        mangsonguyen[1] = 8;
-        mangsonguyen[2] = 1;
-        mangsonguyen[3] = 6;
-        mangsonguyen.reverse();
-        console.log(mangsonguyen);
-
-
+        for (let i = 0; i < 5; i++) {
+            mangsonguyen.push(prompt("Nhập"))
+        }
+        document.write(mangsonguyen);
+        document.write("<br>");
+        let arr = mangsonguyen.reverse().join(",");
+        document.write(arr);
     }
+
     key()
 </script>
 </body>
