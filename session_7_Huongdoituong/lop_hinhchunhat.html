@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1366px" height="768px" style="border: 1px solid #d3d3d3 ;">
+    <script>
+        var Rectangle = function (chieudai, chieurong) {
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+            this.getDienTich = function () {
+                return this.chieudai * this.chieurong
+            };
+            this.getAcreage = function () {
+                return (this.chieudai + this.chieurong) * 2
+            };
+        };
+
+        function createCircle() {
+            var ctx = document.getElementById("myCanvas").getContext("2d");
+            ctx.fillRect(500, 279, 360, 210);
+
+        }
+        createCircle();
+            let rectangle = new Rectangle(6, 5);
+            let dientich = rectangle.getDienTich();
+            let acreage = rectangle.getAcreage();
+            alert('Diện tích: ' + dientich + ", " + "acreage: " + acreage);
+    </script>
+</body>
+</html>
